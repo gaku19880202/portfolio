@@ -1,0 +1,38 @@
+[INFO]	2020-04-06 00:11:19,711	file.doLogin:38	login
+[INFO]	2020-04-06 00:11:19,711	file.registerSession:15	Sessionにログインユーザを登録しました。
+[INFO]	2020-04-06 00:11:55,234	file.doValidation:33	validation OK doUserCreate
+[INFO]	2020-04-06 00:12:20,845	file.doValidation:33	validation OK doUserCreate
+[INFO]	2020-04-06 00:12:33,198	file.doValidation:33	validation OK doUserCreate
+[INFO]	2020-04-06 00:12:49,759	file.doValidation:33	validation OK doUserCreate
+[INFO]	2020-04-06 00:12:59,961	file.doValidation:33	validation OK doUserCreate
+[INFO]	2020-04-06 00:13:14,868	file.doValidation:33	validation OK doUserCreate
+[INFO]	2020-04-06 00:13:34,209	file.doValidation:33	validation OK doUserCreate
+[INFO]	2020-04-06 00:13:48,639	file.doValidation:45	validation NG doSearch
+[INFO]	2020-04-12 02:16:42,563	file.doLogin:38	login
+[INFO]	2020-04-12 02:16:42,570	file.registerSession:15	Sessionにログインユーザを登録しました。
+[INFO]	2020-04-12 15:48:41,309	file.doLogin:38	login
+[INFO]	2020-04-12 15:48:41,309	file.registerSession:15	Sessionにログインユーザを登録しました。
+[INFO]	2020-04-12 15:48:55,012	file.doValidation:48	validation NG doSearch
+[ERROR]	2020-04-12 16:00:48,130	file.checkSession:25	SessionTimeOutです。ログアウトして下さい。
+[INFO]	2020-04-12 16:00:53,515	file.doLogin:38	login
+[INFO]	2020-04-12 16:00:53,515	file.registerSession:15	Sessionにログインユーザを登録しました。
+[INFO]	2020-04-12 16:01:01,923	file.doValidation:48	validation NG doSearch
+[ERROR]	2020-04-12 16:14:04,093	file.checkSession:25	SessionTimeOutです。ログアウトして下さい。
+[INFO]	2020-04-12 16:14:40,191	file.doLogin:38	login
+[INFO]	2020-04-12 16:14:40,191	file.registerSession:15	Sessionにログインユーザを登録しました。
+[INFO]	2020-04-12 16:14:47,855	file.doValidation:47	validation OK doSearch
+[INFO]	2020-04-12 16:14:50,770	file.doValidation:47	validation OK doSearch
+[INFO]	2020-04-14 12:31:50,882	file.doLogin:38	login
+[INFO]	2020-04-14 12:31:50,883	file.registerSession:15	Sessionにログインユーザを登録しました。
+[INFO]	2020-04-18 22:15:32,495	file.doLogin:38	login
+[INFO]	2020-04-18 22:15:32,500	file.registerSession:15	Sessionにログインユーザを登録しました。
+[INFO]	2020-04-29 11:38:54,339	file.doLogin:38	login
+[INFO]	2020-04-29 11:38:54,345	file.registerSession:15	Sessionにログインユーザを登録しました。
+[ERROR]	2020-10-22 17:18:18,478	file.getLoginUserPw:33	tuple index out of range
+[INFO]	2020-10-22 17:18:29,360	file.doLogin:38	login
+[INFO]	2020-10-22 17:18:29,361	file.registerSession:15	Sessionにログインユーザを登録しました。
+[ERROR]	2020-10-28 09:33:03,240	file.getLoginUserPw:33	tuple index out of range
+[INFO]	2020-10-28 09:33:25,256	file.doLogin:38	login
+[INFO]	2020-10-28 09:33:25,256	file.registerSession:15	Sessionにログインユーザを登録しました。
+[INFO]	2020-10-28 09:33:43,572	file.doValidation:47	validation OK doSearch
+[INFO]	2020-10-28 09:33:48,150	file.doValidation:47	validation OK doSearch

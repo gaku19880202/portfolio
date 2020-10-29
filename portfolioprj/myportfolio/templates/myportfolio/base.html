@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <title>Manabu Ono's Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    {% load static %}
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'myportfolio/style.css' %}">
+    
+    <!-- FONT AWESOME -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <!-- googlefont -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    
+    <script>
+
+      // リンクのスムーズスクロール
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 800; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+
+    // 要素フェードイン
+    $(function(){
+        $(window).scroll(function (){
+            $('.fadein').each(function(){
+                var targetElement = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > targetElement - windowHeight + 200){
+                    $(this).css('opacity','1');
+                    $(this).css('transform','translateY(0)');
+                }
+            });
+        });
+    });
+
+    // 要素フェードイン
+    $(function(){
+        $(window).scroll(function (){
+            $('.fadein_later').each(function(){
+                var targetElement = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > targetElement - windowHeight + 200){
+                    $(this).css('opacity','1');
+                    $(this).css('transform','translateY(0)');
+                }
+            });
+        });
+    });
+
+    </script>
+    
+  </head>
+  <body>
+
+      <header class="site-header">
+          <h1>M・O's Portfolio</h1>
+          <nav class="gnav">
+              <ul class="gnav__menu">
+                  <li class="gnav__menu__item"><a href="#top">Top</a></li>
+                  <li class="gnav__menu__item"><a href="#profile">Profile</a></li>
+                  <li class="gnav__menu__item"><a href="#skills">Skills</a></li>
+                  <li class="gnav__menu__item"><a href="#works">Works</a></li>
+                  <li class="gnav__menu__item"><a href="#contact">Contact</a></li>
+              </ul>
+          </nav>
+      </header> 
+      {% block content %}
+      {% endblock %}
+
+    <footer class="site-footer">
+      <p class="copyright">@2020 M・O's Portfolio</p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,142 @@
+{% extends 'myportfolio/base.html' %}
+
+{% block content %}
+{% load static %}
+
+<div class="container_main" id="top"> 
+  <div class= "con_top">
+      <div class="fadein"><a href="#profile"><i class="fas fa-user-circle"></i>Profile</a></div>
+      <div class="fadein"><a href="#skills"><i class="fas fa-laptop"></i>Skills</a></div>
+      <div class="fadein"><a href="#works"><i class="fas fa-briefcase"></i>Works</a></div>
+      <div class="fadein"><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></div>
+  </div>
+
+  <div class="con_profile_img">
+    <img class ="fadein" src="{% static 'myportfolio/images/profile.jpg' %}" alt="profile">
+  </div>
+
+  <div class="con_profile" id="profile">
+    <h1 class="google_font"><i class="fas fa-user-circle"></i>Profile</h1>
+    <div calss="profile_text"> 
+      NAME&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;M・O</br>
+      AGE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;32歳</br>
+      LIVE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;神奈川藤沢市</br>
+      WORK&nbsp;&nbsp;&nbsp;:&nbsp;WEB系(Java)</br> 
+      HOBBY&nbsp;:&nbsp;サッカー観戦、フェス、お酒</br>
+    </div>
+    <div class="inline-block">
+      <div class="img_intext cp_zoomin">
+        <img class ="fadein" src="{% static 'myportfolio/images/soccer.jpg' %}" alt="profile">
+        <p class ="fadein" >I LOVE SOCCER!</p>
+      </div>
+    </div>
+    <div class="inline-block">
+      <div class="img_intext cp_zoomin">
+        <img class ="fadein" src="{% static 'myportfolio/images/fes.jpg' %}" alt="profile">
+        <p class ="fadein" >I LOVE MUSIC!</p>
+      </div>
+    </div>
+    <div class="inline-block">
+      <div class="img_intext cp_zoomin">
+        <img class ="fadein" src="{% static 'myportfolio/images/liquor.jpg' %}" alt="profile">
+        <p class ="fadein" >I LOVE LIQOUR!</p>
+      </div>
+    </div>  
+  </div>
+
+  <div class="con_skills" id="skills">
+    <h1><i class="fas fa-user-circle"></i>Skills</h1>
+
+    <table class="table table-borderless">
+      <tbody>
+        <tr>
+          <td>Java(Spring)</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td>Apache</td>
+          <td>Tomcat</td>
+        </tr>
+        <tr>
+          <td>VBA</td>
+          <td>VBS</td>
+        </tr>
+        <tr>
+          <td>bat</td>
+          <td>shell</td>
+        </tr>
+        <tr>
+          <td>RPA(kapow)</td>
+          <td>JP1/AJS</td>
+        </tr>
+        <tr>
+          <td>SENJU</td>
+          <td>Angular</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>JavaScript</td>
+        </tr>
+        <tr>
+          <td>PYTHON(DJANGO)</td>
+          <td>BootStrap</td>
+        </tr>
+        <tr>
+          <td>nginx</td>
+          <td>gunicorn</td>
+        </tr>
+        <tr>
+          <td>RaspberryPie</td>
+          <td>C#(UNITY)</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="inline-block">
+      <div class="img_skills">
+        <img class ="fadein" src="{% static 'myportfolio/images/java.jpg' %}" alt="skills">
+      </div>
+    </div>
+    <div class="inline-block">
+      <div class="img_skills">
+        <img class ="fadein" src="{% static 'myportfolio/images/python.jpg' %}" alt="skills">
+      </div>
+    </div>
+    <div class="inline-block">
+      <div class="img_skills">
+        <img class ="fadein" src="{% static 'myportfolio/images/angular.jpg' %}" alt="skills">
+      </div>
+    </div>
+    <div class="inline-block">
+      <div class="img_skills">
+        <img class ="fadein" src="{% static 'myportfolio/images/html.jpg' %}" alt="skills">
+      </div>
+    </div>
+    <div class="inline-block">
+      <div class="img_skills">
+        <img class ="fadein" src="{% static 'myportfolio/images/raspberry.jpg' %}" alt="skills">
+      </div>
+    </div>
+    <div class="inline-block">
+      <div class="img_skills">
+        <img class ="fadein" src="{% static 'myportfolio/images/unity.jpg' %}" alt="skills">
+      </div>
+    </div>
+  </div>
+
+  <div class="con_works" id="works">
+    <h1><i class="fas fa-user-circle"></i>Works</h1>
+    <div class="fadein">
+      <img class ="img_works" src="{% static 'myportfolio/images/MyPortfolio.png' %}" width="240" height="240" alt="MyPortfolio" title="MyPortfolip">
+    </div>
+    <h3>This Site!</h3>
+  </div>
+
+  <div class="con_contact" id="contact">
+    <h1><i class="fas fa-envelope"></i>Contact</h1>
+    <div class="contact_text">gaku19880202@yahoo.co.jp</div>
+  </div>
+
+</div>
+
+
+{% endblock %}

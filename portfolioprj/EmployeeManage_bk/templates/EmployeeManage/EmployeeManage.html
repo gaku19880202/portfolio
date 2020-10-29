@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <title>EmployeeManagementApp</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+        {% load static %}
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'EmployeeManage/login.css' %}" media="screen">
+    
+    <!-- FONT AWESOME -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+  <div class="con_center">
+    <div class="login">
+      <h1 class="google_font">Employee </br> Management</h1>
+        <form action="{% url 'doLogin' %}" method="post">
+          {% csrf_token %}
+          <input type="text" name="User" placeholder="Username" required="required" />
+            <input type="password" name="Password" placeholder="Password" required="required" />
+            <button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+        </form>
+        <div>User:test Pw:test</div>
+        <div>SessionTimeOut 60sec</div>
+        <div>{{ Err }}</div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+{% extends 'EmployeeManage/base.html' %}
+
+{% block content %}
+{% load static %}
+
+<div class = "container_main">
+  <div class="con_top">
+    <h2 class="google_font">User Edit</h1>
+  </div>
+
+  <div class="con_btn">
+    <form action="{% url 'doUserCreate' %}" method="post">
+      {% csrf_token %}
+        <div class="inline-block">
+          {{ form.name }}{{ form.dept }}{{ form.salary }}
+        </div>
+        <div class="inline-block">
+          <button type="submit" class="google_font" name="btnCreate">Create</button>
+        </div>
+    </form>
+  </div>
+
+  <div class="con_tbl">
+
+    <table class="em_tbl">
+      <tr>
+        <th class="google_font">ID</th>
+        <th class="google_font">Name</th>
+        <th class="google_font">Dept</th>
+        <th class="google_font">salary</th>
+        <th class="google_font">Update</th>
+        <th class="google_font">Delete</th>
+      </tr>
+      {% for emp in emplist %}
+
+      <tr>
+        <form action="{% url 'doUserEdit' %}" method="post">
+          {% csrf_token %}
+          <td>{{ emp.id }}</td>
+          <td>{{ emp.name }}</td>
+          <td>{{ emp.dept }}</td>
+          <td>{{ emp.salary }}</td>
+          <td><button class="google_font" type="submit" class="google_font" name="btnUpdate_{{ emp.id }}">Update</button></td>
+          <td><button class="google_font" type="submit" class="google_font" name="btnDelete_{{ emp.id }}">Delete</button></td>
+        </form>
+      </tr>
+
+      {% endfor %}
+    </table>
+
+  </div>
+
+</div>
+
+{% if strErrMsg %}
+<h9 class="google_font">{{ strErrMsg }}</h9>
+{% endif %}
+
+{% endblock %}

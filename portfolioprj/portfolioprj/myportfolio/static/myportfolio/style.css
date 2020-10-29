@@ -1,0 +1,248 @@
+
+body {
+    background: white url("images/fresh_snow.png") repeat; 
+    background-attachment: fixed;
+    }
+
+    .google_font {
+      font-family: 'Josefin Sans', Arial;
+    }
+
+    /* グリッドディスプレイのメイン設定 */
+    .container_main {
+      display:grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-areas:
+      "t t t t t t"
+      "t t t t t t"
+      "pi p p p p p"
+      "pi p p p p p"
+      "s s s s s s"
+      "s s s s s s"
+      "w w w w w w"
+      "c c c c c c";
+    }
+
+    /* グリッドディスプレイの大枠設定 */
+    .con_top{
+      padding-top: 100px;
+      background: white url("images/enosima.jpg") no-repeat;
+      background-position: center;
+      text-align:  left;
+      background-size: cover;
+      color: white;
+      grid-area: t;
+      font-family: 'Josefin Sans', Arial;
+      font-weight: 300;
+      font-size: 4rem;
+    }
+
+    /* グリッドディスプレイの大枠設定 start*/
+    .con_profile_img{
+      padding-top: 100px;
+      grid-area: pi;
+      text-align:  center;
+    }
+
+    .con_profile{
+      padding-top: 100px;
+      padding-left: 50px;
+      text-align:  left;
+      grid-area: p;
+      font-size: 2rem;
+    }
+
+    .con_skills{
+      background: white;
+      padding-top: 100px;
+      text-align:  center;
+      grid-area: s;
+      font-family: 'Josefin Sans', Arial;
+    }
+
+    .con_works{
+      padding-top: 100px;
+      text-align:  center;
+      grid-area: w;
+      font-family: 'Josefin Sans', Arial;
+    }
+
+    .con_contact{
+    background: white;
+    padding-top: 100px;
+    text-align:  center;
+    grid-area: c;
+    font-family: 'Josefin Sans', Arial;
+    }
+    /* グリッドディスプレイの大枠設定 end*/
+
+    /* ナビバー設定 start*/
+    .site-header{
+        background: rgba(129, 72, 228, 0.5);
+        display: flex;
+        padding: 20px;
+        position: fixed;
+        justify-content: space-between;
+        font-family: 'Josefin Sans', Arial;
+        transition: .5s;
+        width: 100%;
+    }
+
+    .gnav__menu__item{
+        margin-left: 30px;
+        font-family: 'Josefin Sans', Arial;
+    }
+    .gnav__menu__item a{
+        color: #333;
+        font-size: 1rem;
+        text-decoration: none;
+        font-family: 'Josefin Sans', Arial;
+    }
+
+    .site-footer{
+      background: #333;
+      padding: 20px;
+      font-family: 'Josefin Sans', Arial;
+    }
+    .copyright{
+      color: #fff;
+      font-size: 1rem;
+      text-align: center;
+      font-family: 'Josefin Sans', Arial;
+    }
+
+    a:link, a:visited, a:hover, a:active {
+      color: white;
+    }
+
+    ul {
+      text-align: center;
+      margin: 0px;
+      padding: 0px;
+    }
+    
+    li {
+      display: inline-block;
+    }
+    
+    p {
+      line-height: 60px;
+      margin: 0px;
+    } 
+    
+    /* ナビバー設定 end*/ 
+
+    /* 画像周り start*/
+    .inline-block {
+      display: inline-block;
+      padding:  20px;
+    }
+
+    .profileimg {
+      border-radius: 50%;
+      width:  180px;
+      height: 180px;
+    }
+
+    /* ホバー時拡大 start*/
+    .cp_imghover {
+      border-radius: 10px;
+      overflow: hidden;
+      width: 180px;
+      height: 180px;
+      margin: 2em auto;
+      cursor: pointer;
+    }
+
+    .cp_zoomin img {
+      border-radius: 10px;
+      width: 400px;
+      height: 400px;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+    .cp_zoomin img:hover {
+      -webkit-transform: scale(1.5,1.5);
+      transform: scale(1.5,1.5);
+    }
+     /* ホバー時拡大 end*/
+    
+    /* 画像に文字入れる start*/ 
+    .img_intext {
+      position: relative;
+      }
+    
+    .img_intext p {
+      position: absolute;
+      top: 50px;/*画像の左上に配置*/
+      left: 15px;
+      margin: 25px; /*余計な隙間を除く*/
+      color: white;/*文字を白に*/
+      font-size: 15px;
+      line-height: 1;/*行高は1に*/
+      padding: 5px 10px;/*文字周りの余白*/
+      font-size: 1rem;
+      }
+    
+    .img_intext img {
+      border-radius: 10px;
+      width:  180px;       /* ※縦横を同値に */
+      height: 180px;       /* ※縦横を同値に */
+      }
+    /* 画像に文字入れる end*/ 
+    
+    /* skills画像 start*/ 
+    .img_skills img{
+      border-radius: 10px;
+      width:  80px;       /* ※縦横を同値に */
+      height: 80px;       /* ※縦横を同値に */
+    }
+    /* skills画像 end*/ 
+
+    /* works画像 start*/ 
+    .img_works {
+      border-radius: 10px;
+      width:  240px;       /* ※縦横を同値に */
+      height: 240px;       /* ※縦横を同値に */
+      transition: all 0.6s ease 0s;
+    }
+
+    .img_works:hover {
+      cursor: pointer;
+      transform: scale(1.1, 1.1);
+      box-shadow: 0 0 20px black;
+    }
+    /* works画像 end*/ 
+
+    /* プロフィール画像 start*/ 
+    .con_profile_img img{
+      border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+      width:  180px;       /* ※縦横を同値に */
+      height: 180px;       /* ※縦横を同値に */
+      animation: fuwafuwa 3s infinite;
+    }
+
+    @keyframes fuwafuwa {
+      0% { transform:translateY(0px); }
+      50% { transform:translateY(10px); }
+      100% { transform:translateY(  0px); }
+    }
+
+    /* プロフィール画像 end*/ 
+
+    /* フェードイン start*/ 
+    .fadein {
+      opacity : 0;
+      transform: translateY(20px);
+      transition: all 1.5s;
+    }
+
+    .fadein_later {
+      opacity : 0;
+      transform: translateY(20px);
+      transition: all 3s;
+    }
+    /* フェードイン end*/ 
+
+  /* 画像周り end*/

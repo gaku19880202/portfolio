@@ -1,0 +1,277 @@
+{% extends 'myportfolio/base.html' %}
+
+{% block content %}
+{% load static %}
+
+<div class="container_main" id="top"> 
+  
+  <div class= "con_top">
+    <div class="main_imgBox">
+      <div class="main_img" style="background-image: url({% static 'myportfolio/images/evening.jpg' %})"></div>
+      <div class="main_img" style="background-image: url({% static 'myportfolio/images/starry-night.jpg' %})"></div>
+      <div class="main_img" style="background-image: url({% static 'myportfolio/images/desert.jpg' %})"></div>
+      <div class="main_img" style="background-image: url({% static 'myportfolio/images/enosima.jpg' %})"></div>
+      <div class="main_img" style="background-image: url({% static 'myportfolio/images/milkyway.jpg' %})"></div>
+      <h1 class="main_title">
+        <span class="break-down">LIVE</span>
+        &nbsp;A
+        <span>&nbsp;LIFE</span>
+      </h1>
+      <h1 class="main_title2">
+        &nbsp;YOU
+        <span>&nbsp;Will</span>
+        <span>&nbsp;REMEMBER</span>
+      </h1>
+      <h1 class="main_title_small">
+        <span>
+          LIVE&nbsp;A&nbsp;LIFE</br>
+          <span>&nbsp;YOU&nbsp;WILL</br></span>
+          REMEMBER
+        </span>
+      </h1>
+     </div>
+  </div>
+
+  <div class="con_profile" id="profile">
+    
+    <h1 class="google_font"><i class="fas fa-user-circle"></i>Profile</h1>
+
+    <div calss="japanese_font"> 
+      2015年からSESの会社で働いていて、</br>
+      現在はWEB系(Java)の現場で働いています。</br>
+      プライベートでは、主にPythonを触っています。</br>
+      制作物の詳細はWorksをご覧 ください。</br>
+      得意な言語は、Python、VBAです。</br> 
+    </div>
+    <div class="inline-block">
+      <div class="img_intext">
+        <img class ="fadein" src="{% static 'myportfolio/images/soccer.jpg' %}" alt="profile">
+        <p class ="fadein google_font" >I LOVE SOCCER!</p>
+      </div>
+    </div>
+    <div class="inline-block">
+      <div class="img_intext">
+        <img class ="fadein" src="{% static 'myportfolio/images/fes.jpg' %}" alt="profile">
+        <p class ="fadein google_font" >I LOVE MUSIC!</p>
+      </div>
+    </div>
+    <div class="inline-block">
+      <div class="img_intext">
+        <img class ="fadein" src="{% static 'myportfolio/images/liquor.jpg' %}" alt="profile">
+        <p class ="fadein google_font" >I LOVE LIQOUR!</p>
+      </div>
+    </div>  
+  </div>
+
+  <div class="con_skills" id="skills">
+    <h1><i class="fas fa-user-circle"></i>Skills</h1>
+
+    <table class="table table-borderless">
+      <tbody>
+        <tr>
+          <td>Java(Spring)</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td>Apache</td>
+          <td>Tomcat</td>
+        </tr>
+        <tr>
+          <td>VBA</td>
+          <td>VBS</td>
+        </tr>
+        <tr>
+          <td>bat</td>
+          <td>shell</td>
+        </tr>
+        <tr>
+          <td>RPA(kapow)</td>
+          <td>JP1/AJS</td>
+        </tr>
+        <tr>
+          <td>SENJU</td>
+          <td>Angular</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>JavaScript</td>
+        </tr>
+        <tr>
+          <td>PYTHON(DJANGO)</td>
+          <td>BootStrap</td>
+        </tr>
+        <tr>
+          <td>nginx</td>
+          <td>gunicorn</td>
+        </tr>
+        <tr>
+          <td>RaspberryPie</td>
+          <td>C#(UNITY)</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="inline-block">
+      <div class="img_skills">
+        <img class ="fadein" src="{% static 'myportfolio/images/java.jpg' %}" alt="skills">
+      </div>
+    </div>
+    <div class="inline-block">
+      <div class="img_skills">
+        <img class ="fadein" src="{% static 'myportfolio/images/python.jpg' %}" alt="skills">
+      </div>
+    </div>
+    <div class="inline-block">
+      <div class="img_skills">
+        <img class ="fadein" src="{% static 'myportfolio/images/angular.jpg' %}" alt="skills">
+      </div>
+    </div>
+    <div class="inline-block">
+      <div class="img_skills">
+        <img class ="fadein" src="{% static 'myportfolio/images/html.jpg' %}" alt="skills">
+      </div>
+    </div>
+    <div class="inline-block">
+      <div class="img_skills">
+        <img class ="fadein" src="{% static 'myportfolio/images/raspberry.jpg' %}" alt="skills">
+      </div>
+    </div>
+    <div class="inline-block">
+      <div class="img_skills">
+        <img class ="fadein" src="{% static 'myportfolio/images/unity.jpg' %}" alt="skills">
+      </div>
+    </div>
+  </div>
+
+  <div class="con_works" id="works">
+    <h1><i class="fas fa-user-circle"></i>Works</h1>
+  </div>
+
+  <div class="con_works1 mx-auto fadein" style="width: 20rem; height:25rem;">
+    <div class="card zoom">
+      <img class="card-img-top" src="{% static 'myportfolio/images/MyPortfolio.png' %}" alt="MyPortfolio" style="width: 20rem; height: 12rem;">
+      <div class="card-body">
+        <h4 class="card-title">MyPortfolio</h4>
+        <p class="card-text" style="line-height:1.5rem;text-align: left;height:10rem;">
+          使用技術：</br>
+          Python(Django),VPS(CentOS7),</br>
+          Gunicorn,Nginx</br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="con_works2 mx-auto fadein" style="width: 20rem; height:25rem;">
+    <div class="card zoom">
+      <img class="card-img-top" src="{% static 'myportfolio/images/EmployeeManage.png' %}" alt="MyPortfolio" style="width: 20rem; height: 12rem;">
+      <div class="card-body">
+        <h4 class="card-title">社員管理アプリ</h4>
+        <p class="card-text" style="line-height:1.5rem;text-align: left;height:6rem;">
+          使用技術：</br>
+          Python(Django),VPS(CentOS7),</br>
+          Gunicorn,Nginx,MySql</br>
+        </p>
+        <a href="http://160.16.136.126/EmployeeManage/"class="btn btn-secondary btn-sm">Demo</a></p>
+      </div>  
+    </div>
+  </div>
+
+  <div class="con_works3 mx-auto fadein" style="width: 20rem; height:25rem;">
+    <div class="card zoom">
+      <img class="card-img-top" src="{% static 'myportfolio/images/scraping.jpg' %}" alt="MyPortfolio" style="width: 20rem; height: 12rem;">
+      <div class="card-body">
+        <h4 class="card-title">SCRAPING</h4>
+        <p class="card-text" style="line-height:1.5rem;text-align: left;height:10rem;">
+          使用技術：</br>
+          Python,VPS(CentOS7),CRON,MySql,</br>
+          LINE NOTIFY</br>
+          概要：定期的にスクレイピングし、結果をLINEに送信</br>
+        </p>
+      </div>  
+    </div>
+  </div>
+
+  <div class="con_works4 mx-auto fadein" style="width: 20rem; height:25rem;">
+    <div class="card zoom">
+      <img class="card-img-top" src="{% static 'myportfolio/images/slack.png' %}" alt="MyPortfolio" style="width: 20rem; height: 12rem;">
+      <div class="card-body">
+        <h4 class="card-title">SlackChatBot</h4>
+        <p class="card-text" style="line-height:1.5rem;text-align: left;height:10rem;">
+          使用技術：</br>
+          Python,SlackApp(bot、IncomingWebhook)</br>
+          概要：ぐるなびAPIに繋いで結果を返答する、サーバからチャネルにメッセージを送信する</br>
+        </p>
+      </div>  
+    </div>
+  </div>
+
+  <div class="con_works5 mx-auto fadein" style="width: 20rem; height:25rem;">
+    <div class="card zoom">
+      <img class="card-img-top" src="{% static 'myportfolio/images/angular.jpg' %}" alt="MyPortfolio" style="width: 20rem; height: 12rem;">
+      <div class="card-body">
+        <h4 class="card-title">社内ポータルサイト</h4>
+        <p class="card-text" style="line-height:1.5rem;text-align: left;height:10rem;">
+          使用技術：</br>
+          Angular7(Node.js + MongoDB + EXPRESS)</br>
+          (社員一覧ページを担当)</br>
+        </p>
+      </div>  
+    </div>
+  </div>
+
+  <div class="con_works6 mx-auto fadein" style="width: 20rem; height:25rem;">
+    <div class="card zoom">
+      <img class="card-img-top" src="{% static 'myportfolio/images/Docker.jpg' %}" alt="MyPortfolio" style="width: 20rem; height: 12rem;">
+      <div class="card-body">
+        <h4 class="card-title">Docker</h4>
+        <p class="card-text" style="line-height:1.5rem;text-align: left;height:10rem;">
+          使用技術：</br>
+          Docker,DockerCompose</br>
+          概要：Dockerfile,DockerCompose.ymlを作成し、Djangoの開発環境構築</br>
+        </p>
+      </div>  
+    </div>
+  </div>
+
+  <div class="con_works7 mx-auto fadein" style="width: 20rem; height:25rem;">
+    <div class="card zoom">
+      <img class="card-img-top" src="{% static 'myportfolio/images/java.jpg' %}" alt="MyPortfolio" style="width: 20rem; height: 12rem;">
+      <div class="card-body">
+        <h4 class="card-title">勤怠管理アプリ</h4>
+        <p class="card-text" style="line-height:1.5rem;text-align: left;height:10rem;">
+          使用技術：</br>
+          Java(SpringBoot + Thymeleaf),MySql</br>
+          機能：CRUD、ログイン、</br>
+          　　　セッション管理</br>
+          　　　(Session,Interceptor)、</br>
+          　　　共通エラー処理</br>
+          　　　(ExceptionHandler)</br>
+        </p>
+      </div>  
+    </div>
+  </div>
+
+  <div class="con_works8 mx-auto fadein" style="width: 20rem; height:25rem;">
+    <div class="card zoom">
+     <div class="card-body">
+        <h4 class="card-title">Other</h4>
+        <p class="card-text" style="line-height:1.5rem;text-align: left;height:22rem;">
+          ・教師型機械学習（TensorFlow)</br>
+          ・画像認識(PyOCR)</br>
+          ・RaspberryPie</br>
+          　(ドアロック解除装置作成)</br>
+          ・Unity(2Dゲーム作成)</br>
+        </p>
+      </div>  
+    </div>
+  </div>
+
+
+  <div class="con_contact" id="contact">
+    <h1><i class="fas fa-envelope"></i>Contact</h1>
+    <div class="contact_text">gaku19880202@yahoo.co.jp</div>
+  </div>
+
+</div>
+
+
+{% endblock %}

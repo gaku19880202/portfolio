@@ -1,0 +1,24 @@
+{% extends 'EmployeeManage/base.html' %}
+
+{% block content %}
+{% load static %}
+
+<div class = "container_main">
+  <div class="con_top">
+    <h2 class="google_font">User Update</h1>
+  </div>
+
+  <div class="con_btn">
+    <form action="{% url 'doUserUpdate' %}" method="post">
+      {% csrf_token %}
+        <div class="inline-block">
+          {{ form.id_num }}{{ form.name }}{{ form.dept }}{{ form.salary }}
+        </div>
+        <div class="inline-block">
+          <button type="submit" class="google_font" name="btnUpdate">Update</button>
+        </div>
+    </form>
+  </div>
+
+</div>
+{% endblock %}
